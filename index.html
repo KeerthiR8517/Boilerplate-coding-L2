@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+ 
+    <title>Coding Assesment L2 boilerplate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="img-container">
+        <img src="image1.jpg" alt="image" width="400" height="400" style= "border-radius: 5px; border:none";><br><br>
+        <div class="i-container">
+         <img src="image1.jpg" alt="image" width="90" height="90"style= "border-radius: 5px;">
+         <img src="image 2.jpg" alt="image" width="90" height="90"style= "border-radius: 5px;">
+         <img src="image 3.jpg" alt="image" width="90" height="90"style= "border-radius: 5px;">
+         <img src="image 4.jpg" alt="image" width="90" height="90"style= "border-radius: 5px;">
+    </div></div>
+    <div class="container">
+        <h5 style="color:grey;">Marmeto</h5 >
+        <h3> Embrace Sideboard</h3>
+        <hr>
+
+        <div id="price" ><p style="color: red;"><b>$12999.00</b> 35% Off</p>
+        <del style="color:grey;">$19999.00</del></div>
+        <hr>
+
+         
+         <p> Choose a Color</p>
+         <button id="color" class="color1" style="background-color:rgb(208, 172, 127) "><h3 id="check">&#x2713</h3></button>
+         <button id="color" class="color2" style="background-color:rgb(84, 159, 84)">  <h3 id="check">&#x2713</h3></button>
+         <button id="color" class="color3" style="background-color:rgb(162, 124, 199)">   <h3 id="check">&#x2713</h3></button>
+         <button id="color" class="color4" style="background-color:pink">                <h3 id="check">&#x2713</h3></button><hr>
+
+         <p>Choose a Size</p>
+         <button id="size"><input type="radio"  name="one" value="small">Small</button>
+         <button id="size"><input type="radio"  name="one"value="medium"> Medium</button>
+         <button id="size"><input type="radio"  name="one"value="Large">Large</button>
+         <button id="size"><input type="radio"  name="one"value="Extra Large">Extra Large</button>
+         <button id="size"><input type="radio"  name="one"value="XXL">XLL</button><br><br>
+        
+         <div class="quantity">
+            <button class="btn minus" type="button" onclick="decrement()">
+                <i class="fas fa-minus"></i>
+            </button>
+            <input type="text" value="1" id="qtyInput">
+            <button class="btn plus" type="button" onclick="increment()">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+        <button  class="cart" onClick="addcart()" > <i class="fal fa-shopping-bag"></i>Add To Cart</button><hr>
+        <h5 id="result"></h5>
+        <p>The Embrace Sideboard is a stylish wear, with a top cloth designed to provide superior protection and look great, 
+            this storage solution is both functional and attractive. It fits seamlessly into any home decor, with clean lines and a timeless look. 
+            Crafted from premium materials for a combination of style, durability, and reliability.</p>
+        
+        
+        
+
+
+
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

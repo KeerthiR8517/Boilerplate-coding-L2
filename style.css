@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+*{
+  font-family:'roboto'sans-serif;
+
+}
+  
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content:space-around;
+}
+P,hr{
+  color:grey;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.quantity {
+  width: 150px;
+  height: 50px;
+  background-color: #edeefa;
+  padding: 10px;
+  display: inline-flex;
+  overflow: hidden;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none;
+  width: 50px;
+  height: 50px;
+  font-size: 0.5rem; 
+  background: 0 0;
+  color: #000;
+  cursor: pointer;
+}
+
+#qtyInput {
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
+  color: #000;
+  background: 0 0;
+  flex: 1;
+  font-weight: 700;
+}
+
+#qtyInput:focus-visible {
+  outline: none;
+}
+
+.cart{
+ border-radius: 30px;
+ background-color:rgb(39, 39, 72);
+ color:white;
+ height: 50px;
+ width:250px;
+}
+.img-container{
+  margin-top: 50px;
+  margin-right: 80px;
+  margin-left: 50px;
+  
+}
+.container{
+ margin-right: 200px;
+ margin-top: 30px;
+
+}
+h3{
+  line-height: .25px;
+}
+#price{
+  color:rgb(39, 39, 72); 
+  line-height: 8px;
+}
+b{
+  color:rgb(4, 4, 88);
+  font-size: x-large;
+  font-family: Yu Gothic Medium;
+}
+del{
+  font-family: Yu Gothic Medium;
+}
+#color{
+  border:none;
+  width: 30px;
+  height:30px;
+  color:white;
+ margin-left:8px ;
+  
+}
+.i-container{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+img:hover{
+  border:2px solid black;
+}
+
+#size{
+  border-radius: 5px;
+  border:none;
+  padding:5px;
+  justify-content: space-around;
+  margin-left:5px;
+
+}
+#size:hover{
+  background-color:rgb(201, 201, 247);
+  color:rgb(26, 26, 171);
+
+}
+#check{
+  opacity: 0;
+
+}
+#check:hover{
+  opacity: 1;
+}
+.color1:hover{
+  
+  box-shadow: 0 0 0 2px rgb(208, 172, 127),inset 0 0 0 3px white;
+}
+.color2:hover{
+  
+  box-shadow: 0 0 0 2px rgb(84, 159, 84),inset 0 0 0 3px white;
+}
+.color3:hover{
+  
+  box-shadow: 0 0 0 2px rgb(162, 124, 199),inset 0 0 0 3px white;
+}
+
+.color4:hover{
+  
+  
+  box-shadow: 0 0 0 2px pink,inset 0 0 0 3px white;
+}
+
+ /* Mobile Styles */
+@media only screen and (max-width: 767px) {
+ 
+  body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-container {
+    margin: 20px; 
+  }
+
+  .container {
+    margin: 20px;
+  }
+}
+
+ /* Tablet Styles */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+ 
+  .img-container {
+    margin: 30px; 
+  }
+
+  .container {
+    margin: 30px;
+  }
+}
+
+  /* Desktop Styles */
+@media only screen and (min-width: 1025px) {
+
+  .img-container {
+    margin-right: 80px;
+    margin-left: 50px;
+  }
+
+  .container {
+    margin-right: 200px;
+    margin-top: 30px;
+  }
+}
+
